@@ -1,28 +1,18 @@
 #include<iostream>
+#include "abc.h"
 using namespace std;
 
-class fruit{
-    int a;
-    public:
-    fruit(){a=0;}
-    fruit(int f){a=f;}
-    void print(){cout<<a<<endl;}
-    fruit operator+(fruit f){
-        int x=a+f.a;
-        return fruit(x);
-    }
-};
-
+template<class  abc>
+ class hello{
+     public:
+     void sum(abc x){
+     cout<<x;
+ }
+ };
 
 int main()
-{   
-    fruit f(2);
-    fruit f2(2);
-    fruit f3(2);
-    
-    fruit f4(2);
-    f=f+f2+f4;
-    // f=f+f3;
-    f.print();
+{
+    print(2);
     return 0;
 }
+
